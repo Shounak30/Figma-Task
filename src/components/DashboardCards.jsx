@@ -1,5 +1,5 @@
-import React from "react";
-import { icons, images } from "../utils/constant";
+import React, { memo } from "react";
+import { icons } from "../utils/constant";
 
 const DashboardCards = ({ title, count, image, percent, stock }) => {
   return (
@@ -29,4 +29,4 @@ const DashboardCards = ({ title, count, image, percent, stock }) => {
   );
 };
 
-export default DashboardCards;
+export default memo(DashboardCards);

@@ -1,11 +1,7 @@
-import React from "react";
-import { AiOutlineMessage } from "react-icons/ai";
-import { FaRegTrashCan } from "react-icons/fa6";
-import { IoMdNotificationsOutline } from "react-icons/io";
-import { IoSettingsOutline } from "react-icons/io5";
+import React, { memo } from "react";
+import { icons, images } from "../utils/constant";
 import HeaderIcon from "./HeaderIcon";
 import SearchBar from "./SearchBar";
-import { icons, images } from "../utils/constant";
 
 const Navbar = () => {
   return (
@@ -59,4 +55,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default memo(Navbar);

@@ -1,6 +1,5 @@
-import React from "react";
+import React, { memo } from "react";
 import { CiSearch } from "react-icons/ci";
-import { HiMagnifyingGlass } from "react-icons/hi2";
 
 const SearchBar = () => {
   return (
@@ -12,4 +11,4 @@ const SearchBar = () => {
   );
 };
 
-export default SearchBar;
+export default memo(SearchBar);

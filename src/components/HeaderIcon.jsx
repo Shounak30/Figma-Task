@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { IoMdNotificationsOutline } from "react-icons/io";
 
 const HeaderIcon = ({ count, icon, bgColor, iconColor, dotColor }) => {
@@ -18,4 +18,4 @@ const HeaderIcon = ({ count, icon, bgColor, iconColor, dotColor }) => {
   );
 };
 
-export default HeaderIcon;
+export default memo(HeaderIcon);

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { memo, useState } from "react";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -71,4 +71,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default memo(Sidebar);

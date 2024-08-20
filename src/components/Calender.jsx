@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 import { FaCalendarAlt } from "react-icons/fa";
 
 const Calender = () => {
@@ -34,4 +34,4 @@ const Calender = () => {
   );
 };
 
-export default Calender;
+export default memo(Calender);
