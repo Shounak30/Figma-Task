@@ -43,7 +43,7 @@ const Navbar = () => {
         <div className="flex gap-3 border-l-2 px-2 m-2 items-center">
           <p>Hello, Rasa</p>
           <img
-            class="w-12 h-12 rounded-full"
+            className="w-12 h-12 rounded-full"
             src={images.profileImage}
             height={250}
             width={250}

@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Calender from "../components/Calender";
 import DashboardCards from "../components/DashboardCards";
 import { images } from "../utils/constant";
+import FooterCards from "../components/FooterCards";
+import Footer from "../components/Footer";
 
 const Dashboard = () => {
   return (
-    <div className="flex flex-col w-full px-7 gap-7 ">
+    <div className="flex flex-col w-full px-7 pb-9 gap-7 ">
       <div className="flex justify-between items-center w-full  ">
         <div className="flex flex-col">
-          <h2 className="font-bold text-2xl">Dashboard</h2>
-          <div>Hi, Samantha. Welcome back to Sedap Admin!</div>
+          <h2 className="font-bold text-4xl">Dashboard</h2>
+          <div className="font-medium mb-4 text-lg text-gray-400">
+            Hi, Samantha. Welcome back to Sedap Admin!
+          </div>
         </div>
         <Calender />
       </div>
@@ -43,6 +47,8 @@ const Dashboard = () => {
           stock={false}
         />
       </div>
+      {/* footer */}
+      <Footer />
     </div>
   );
 };

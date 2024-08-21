@@ -2,9 +2,8 @@ import { Fragment, useState } from "react";
 import "./App.css";
 import Sidebar from "./components/Sidebar";
 
-import Dashboard from "./pages/Dashboard";
-import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,7 +17,6 @@ function App() {
       <div className="flex w-auto ml-64 mt-8">
         <Dashboard />
       </div>
-      <Footer />
     </Fragment>
   );
 }

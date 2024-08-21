@@ -1,4 +1,4 @@
-import React, { memo, useState } from "react";
+import React, { Fragment, memo, useState } from "react";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -8,13 +8,12 @@ const Sidebar = () => {
   };
 
   return (
-    <>
+    <Fragment>
       {/* Toggle Button */}
-
       <div
-        className={`fixed inset-y-0 left-0 transform ${
+        className={`fixed flex flex-col items-center inset-y-0 left-0 transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } w-64 bg-white shadow-lg transition-transform duration-300 ease-in-out border-r-2`}
+        } w-64 bg-white shadow-lg  transition-transform duration-300 ease-in-out border-r-2`}
       >
         <div className="">
           <div className="p-4">
@@ -67,7 +66,7 @@ const Sidebar = () => {
         </div>
         <p className="p-4">Dashboard</p>
       </div>
-    </>
+    </Fragment>
   );
 };
 

@@ -3,7 +3,7 @@ import { icons } from "../utils/constant";
 
 const DashboardCards = ({ title, count, image, percent, stock }) => {
   return (
-    <div className="flex  gap-7 border-2 w-1/4 items-center py-9 px-6 shadow-lg rounded-lg">
+    <div className="flex  gap-7 border-2 lg:w-1/4 md:w-1/2 w-full items-center py-9 px-6 shadow-lg rounded-lg">
       <div className="bg-green-100 px-4 py-5 rounded-full">
         <img height={43} width={58} src={image} />
       </div>

@@ -9,6 +9,9 @@ import totalCancelled from "../assets/images/order-cancelled.png";
 import totalDelivered from "../assets/images/total-delivered.png";
 import totalOrder from "../assets/images/total-order.png";
 import totalRevenue from "../assets/images/total-revenue.png";
+import soupImage from "../assets/images/soup.png";
+import customerOne from "../assets/images/customer-one.png";
+import breakfastImage from "../assets/images/breakfast.png";
 
 export const images = {
   profileImage,
@@ -16,6 +19,9 @@ export const images = {
   totalDelivered,
   totalOrder,
   totalRevenue,
+  soupImage,
+  customerOne,
+  breakfastImage,
 };
 export const icons = {
   bellIcon,
