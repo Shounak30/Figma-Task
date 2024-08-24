@@ -27,7 +27,7 @@ const Calender = () => {
           <option value="01 July 2020 - 31 July 2020">
             01 July 2020 - 31 July 2020
           </option>
-          {/* Add more options as needed */}
+          Add more options as needed
         </select>
       </div>
     </div>

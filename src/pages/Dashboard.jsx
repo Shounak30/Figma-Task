@@ -1,9 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import Calender from "../components/Calender";
 import DashboardCards from "../components/DashboardCards";
 import { images } from "../utils/constant";
 import FooterCards from "../components/FooterCards";
 import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
   return (
